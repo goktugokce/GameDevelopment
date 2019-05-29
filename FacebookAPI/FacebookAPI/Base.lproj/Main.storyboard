@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FacebookAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Logged In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeq-Gu-6Hj">
+                                <rect key="frame" x="20" y="76" width="374" height="119"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119" id="AhB-sg-Dd9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yuG-P2-DlX">
+                                <rect key="frame" x="20" y="651" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fAi-cN-n7s">
+                                <rect key="frame" x="20" y="589" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fAi-cN-n7s" secondAttribute="bottom" constant="277" id="APV-JI-98m"/>
+                            <constraint firstItem="yuG-P2-DlX" firstAttribute="leading" secondItem="fAi-cN-n7s" secondAttribute="leading" id="BjM-0X-aRd"/>
+                            <constraint firstItem="yeq-Gu-6Hj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="GdE-lX-sRr"/>
+                            <constraint firstItem="yeq-Gu-6Hj" firstAttribute="leading" secondItem="fAi-cN-n7s" secondAttribute="leading" id="NEH-8T-0yp"/>
+                            <constraint firstItem="yeq-Gu-6Hj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SJN-oo-0ov"/>
+                            <constraint firstItem="yuG-P2-DlX" firstAttribute="top" secondItem="fAi-cN-n7s" secondAttribute="bottom" constant="32" id="ZcH-KT-KAK"/>
+                            <constraint firstItem="yeq-Gu-6Hj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="lXS-V9-UHF"/>
+                            <constraint firstItem="yuG-P2-DlX" firstAttribute="trailing" secondItem="fAi-cN-n7s" secondAttribute="trailing" id="rG1-GW-6Pv"/>
+                            <constraint firstItem="yeq-Gu-6Hj" firstAttribute="trailing" secondItem="fAi-cN-n7s" secondAttribute="trailing" id="wxy-LH-7vM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblStatus" destination="yeq-Gu-6Hj" id="IcE-TU-EV0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+    </scenes>
+</document>
